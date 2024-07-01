@@ -1,0 +1,24 @@
+/* setting up the toast message animation.  0%{bottom: -100%} means not visible on the screen*/
+@keyframes show-toast {
+    0% { bottom: -100%; }
+    20%, 80% { bottom: 100px; }
+    100% { bottom: -100%; }
+}
+
+.show_notifications {
+    position: fixed;
+    bottom: 100%;
+    right: 20px;
+    animation-name: show-toast;
+    animation-duration: 10s;
+    z-index: 99999;
+}
+.btn{
+    padding: 2px 1.75em;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+table > tbody > tr > td{
+    border : none !important;
+}
